@@ -1,0 +1,67 @@
+/**
+ * @copyright 2024 - Reza Reynaldo Hutagaol
+ * @license Apache-2.0
+ */
+
+/**
+ * Node Modules
+ */
+import { useState } from 'react';
+
+/**
+ * Components
+ */
+import Navbar from './Navbar';
+
+export const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
+  const toggleNav = () => setNavOpen((prev) => !prev);
+
+  return (
+    <header
+      className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0"
+      aria-label="Header Section"
+    >
+      <div
+        className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center 
+            md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]"
+      >
+        <h1>
+          <a href="/" className="logo" aria-label="Go to home page">
+            <img
+              src="images/logo.svg"
+              width={40}
+              height={40}
+              alt="Logo of Reza Reynaldo Hutagaol - Java Backend Developer"
+            />
+          </a>
+        </h1>
+
+        <div className="relative md:justify-self-center">
+          <button
+            className={`menu-btn md:hidden ${navOpen ? 'open' : ''}`}
+            aria-expanded={navOpen}
+            aria-label={
+              navOpen ? 'Close navigation menu' : 'Open navigation menu'
+            }
+            onClick={toggleNav}
+          >
+            <span className="material-symbols-rounded">
+              {navOpen ? 'close' : 'menu'}
+            </span>
+          </button>
+
+          <Navbar navOpen={navOpen} />
+        </div>
+
+        <a
+          href="#contact"
+          className="btn btn-secondary max-md:hidden md:justify-self-end"
+        >
+          Contact Me
+        </a>
+      </div>
+    </header>
+  );
+};
