@@ -11,41 +11,41 @@ import ProjectCard from './ProjectCard';
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
-    title: 'Full stack music app',
-    tags: ['API', 'MVC', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/porto1.png',
+    title: 'Top Up Games App',
+    tags: ['UI', 'Website', 'Development'],
+    projectLink: 'https://landing-game.vercel.app/',
   },
   {
-    imgSrc: '/images/project-2.jpg',
-    title: 'Free stock photo app',
-    tags: ['API', 'SPA'],
-    projectLink: 'https://pixstock-official.vercel.app/',
+    imgSrc: '/images/porto3.png',
+    title: 'Website Dashboard PLN',
+    tags: ['UI', 'Website', 'Development'],
+    projectLink: 'https://demo-ui-pln-dashboard.vercel.app/',
   },
   {
-    imgSrc: '/images/project-3.jpg',
-    title: 'Recipe app',
-    tags: ['Development', 'API'],
-    projectLink: '',
+    imgSrc: '/images/porto2.png',
+    title: 'Website Dashboard Kemenkes',
+    tags: ['UI', 'Website', 'Development'],
+    projectLink: 'https://kemenkes.vercel.app/',
   },
   {
-    imgSrc: '/images/project-4.jpg',
-    title: 'Real state website',
-    tags: ['Web-design', 'Development'],
-    projectLink: '#',
+    imgSrc: '/images/porto5.png',
+    title: 'Websit Garansi Bank Dashboard',
+    tags: ['UI', 'Website', 'Development'],
+    projectLink: 'https://garansi-bank.vercel.app/',
   },
   {
-    imgSrc: '/images/project-5.jpg',
-    title: 'eCommerce website',
-    tags: ['eCommerce', 'Development'],
-    projectLink: '#',
+    imgSrc: '/images/porto4.png',
+    title: 'Website Dashboard BPDLH',
+    tags: ['UI', 'Website', 'Development'],
+    projectLink: 'https://bpdlh.vercel.app/',
   },
-  {
-    imgSrc: '/images/project-6.jpg',
-    title: 'vCard Personal portfolio',
-    tags: ['Web-design', 'Development'],
-    projectLink: '#',
-  },
+  // {
+  //   imgSrc: '/images/project-6.jpg',
+  //   title: 'vCard Personal portfolio',
+  //   tags: ['Web-design', 'Development'],
+  //   projectLink: '#',
+  // },
 ];
 
 const Work = () => {
