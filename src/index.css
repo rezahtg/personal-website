@@ -141,3 +141,12 @@ body {
 .text-field::placeholder {
   @apply text-zinc-400;
 }
+
+/* Drag-scroll track — hide native scrollbar in all browsers */
+.scroll-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-track::-webkit-scrollbar {
+  display: none;
+}

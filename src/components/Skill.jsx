@@ -36,7 +36,7 @@ const skillItem = [
   },
   {
     imgSrc: '/images/backend/intellij-idea.svg',
-    label: 'Intellij Idea',
+    label: 'IntelliJ IDEA',
     desc: 'IDE',
   },
   {
@@ -61,12 +61,12 @@ const skillItem = [
   },
   {
     imgSrc: '/images/backend/mysql.svg',
-    label: 'My SQL',
+    label: 'MySQL',
     desc: 'Database',
   },
   {
     imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
+    label: 'Node.js',
     desc: 'Framework',
   },
   {
@@ -76,7 +76,7 @@ const skillItem = [
   },
   {
     imgSrc: '/images/backend/postgres.svg',
-    label: 'Postgres SQL',
+    label: 'PostgreSQL',
     desc: 'Database',
   },
   {
@@ -100,7 +100,7 @@ const Skill = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2 reveal-up">Essential Tools I use</h2>
+        <h2 className="headline-2 reveal-up">Essential Tools I Use</h2>
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch reveal-up]">
           Discover the powerful tools and technologies I use to create
           exceptional, high-performing websites & applications.

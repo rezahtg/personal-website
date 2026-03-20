@@ -5,7 +5,7 @@
 
 const aboutItems = [
   {
-    label: 'Project done',
+    label: 'Projects done',
     number: 5,
   },
   {

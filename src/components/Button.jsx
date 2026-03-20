@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
  * Primary Button
  */
 
-const ButtonPrimary = ({ href, target = '_self', label, icon, classes }) => {
+const ButtonPrimary = ({ href, target = '_self', label, icon, classes, onClick }) => {
   if (href) {
     return (
       <a href={href} target={target} className={'btn btn-primary ' + classes}>
@@ -24,7 +24,7 @@ const ButtonPrimary = ({ href, target = '_self', label, icon, classes }) => {
     );
   } else {
     return (
-      <button className={'btn btn-primary ' + classes}>
+      <button className={'btn btn-primary ' + classes} onClick={onClick}>
         {label}
 
         {icon ? (
@@ -37,19 +37,20 @@ const ButtonPrimary = ({ href, target = '_self', label, icon, classes }) => {
   }
 };
 
-ButtonPrimary.proptypes = {
+ButtonPrimary.propTypes = {
   label: PropTypes.string.isRequired,
   href: PropTypes.string,
   target: PropTypes.string,
   icon: PropTypes.string,
   classes: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 /**
  * Button Outline
  */
 
-const ButtonOutline = ({ href, target = '_self', label, icon, classes }) => {
+const ButtonOutline = ({ href, target = '_self', label, icon, classes, onClick }) => {
   if (href) {
     return (
       <a href={href} target={target} className={'btn btn-outline ' + classes}>
@@ -64,7 +65,7 @@ const ButtonOutline = ({ href, target = '_self', label, icon, classes }) => {
     );
   } else {
     return (
-      <button className={'btn btn-outline ' + classes}>
+      <button className={'btn btn-outline ' + classes} onClick={onClick}>
         {label}
 
         {icon ? (
@@ -77,12 +78,13 @@ const ButtonOutline = ({ href, target = '_self', label, icon, classes }) => {
   }
 };
 
-ButtonOutline.proptypes = {
+ButtonOutline.propTypes = {
   label: PropTypes.string.isRequired,
   href: PropTypes.string,
   target: PropTypes.string,
   icon: PropTypes.string,
   classes: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export { ButtonPrimary, ButtonOutline };
